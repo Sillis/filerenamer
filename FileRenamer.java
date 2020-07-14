@@ -13,7 +13,8 @@ public class FileRenamer {
             if (files[i].isFile()) {
 		// Remember to change these as well.
                 File f = new File("z:\\projektit\\filerenamer\\samples\\"+files[i].getName()); 
-		// Change the .txt here to the desired file extension.
+		// Change the .txt here to the desired file extension.'
+		// This is also the part where you can define the name for the files. I've used "silly_1.txt" etc.
                 f.renameTo(new File("z:\\projektit\\filerenamer\\samples\\silly_"+i+".txt"));
             }
         }
